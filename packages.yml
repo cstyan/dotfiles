@@ -1,0 +1,76 @@
+---
+- hosts: all
+  become: true
+  tasks:
+    - name: install apt-transport-https
+      apt:
+        name: apt-transport-https
+        state: present
+        force: yes
+        update_cache: yes
+    - name: add skype repo key
+      apt_key:
+        url: https://repo.skype.com/data/SKYPE-GPG-KEY
+    - name: add apt repos
+      apt_repository:
+        repo: "{{ item }}"
+        state: present
+      with_items:
+        - deb [arch=amd64] https://repo.skype.com/deb stable main
+        - deb http://us.archive.ubuntu.com/ubuntu/ xenial multiverse
+        - deb http://us.archive.ubuntu.com/ubuntu/ xenial-updates multiverse
+    - name: install skype
+      apt:
+        name: skypeforlinux
+    - name: install packages on Debian/Ubuntu
+      apt:
+        name: "{{ item }}"
+        state: present
+        force: yes
+        update_cache: yes
+      with_items:
+        - automake
+        - autoconf
+        - autotools-dev
+        - build-essential
+        - cmake
+        - clang
+        - curl
+        - flashplugin-installer
+        - gcc
+        - gccgo
+        - gcc-multilib
+        - gdb
+        # this probably isn't needed, since you need git to
+        # clone the repo locally anyways
+        - git
+        - g++
+        - i3
+        - i3-wm
+        - i3lock
+        - i3status
+        - python
+        - python-all
+        - python-all-dev
+        - python-dev
+        - python-dev
+        - python-pip
+        - silversearcher-ag
+        - unzip
+        - virtualenv
+        - virtualenvwrapper
+        - vagrant
+        - vlc
+        - vim
+        - zip
+        - zsh
+        # for keepassx
+        - qtbase5-dev
+        - libqt5x11extras5-dev
+        - qttools5-dev 
+        - qttools5-dev-tools
+        - libgcrypt20-dev
+        - zlib1g-dev
+        - libxi-dev
+        - libxtst-dev
+        - keepassx
