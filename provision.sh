@@ -5,6 +5,9 @@ GO_VERSION=go1.7.4.linux-amd64.tar.gz
 GIT_DIR=~/git
 DOTFILES_REPO=$GIT_DIR/dotfiles
 
+echo "Setup symlinks."
+ln -sf $DOTFILES_REPO/dotfiles/.zshrc ~/.zshrc
+
 apt-get install software-properties-common
 add-apt respository "deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main"
 apt-get update
@@ -15,7 +18,7 @@ apt-get install ansible
 pip install ansible markupsafe
 
 echo "Run ansible provisioning playbooks."
-ansible-playbook -K -c local -i localhost, packages.yml
+ANSIBLE_NOCOWS=1 ansible-playbook -K -c local -i localhost, packages.yml
 
 echo "Install Golang."
 rm -rf /usr/local/bin/go
@@ -35,8 +38,6 @@ curl -O https://raw.githubusercontent.com/chriskempson/base16-gnome-terminal/mas
 source base16-ocean.dark.sh
 rm base16-ocean.dark.sh
 
-echo "Setup symlinks."
-ln -s $DOTFILES_REPO/dtfiles/.zshrc ~/.zshrc
 
 echo "Remember to setup GOPATH/GOROOT, change shell to zsh,"
-echo "change the terminal profile, and ~/.warprc"
+echo "change the terminal profile, and restart your terminal."
