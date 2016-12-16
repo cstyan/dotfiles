@@ -2,6 +2,8 @@
 
 # vars
 GO_VERSION=go1.7.4.linux-amd64.tar.gz
+GIT_DIR=~/git
+DOTFILES_REPO=$GIT_DIR/dotfiles
 
 apt-get install software-properties-common
 add-apt respository "deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main"
@@ -28,4 +30,13 @@ curl -L https://github.com/mfaerevaag/wd/raw/master/install.sh | sh
 echo "Install Monaco font."
 bash ./install-monaco.sh
 
-echo "Remember to setup GOPATH/GOROOT, and ~/.warprc"
+echo "Get gnome-terminal theme."
+curl -O https://raw.githubusercontent.com/chriskempson/base16-gnome-terminal/master/base16-ocean.dark.sh
+source base16-ocean.dark.sh
+rm base16-ocean.dark.sh
+
+echo "Setup symlinks."
+ln -s $DOTFILES_REPO/dtfiles/.zshrc ~/.zshrc
+
+echo "Remember to setup GOPATH/GOROOT, change shell to zsh,"
+echo "change the terminal profile, and ~/.warprc"
