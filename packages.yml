@@ -55,6 +55,7 @@
         - python-dev
         - python-dev
         - python-pip
+        - rxvt-unicode
         - silversearcher-ag
         - unzip
         - virtualenv
