@@ -11,6 +11,9 @@
     - name: add skype repo key
       apt_key:
         url: https://repo.skype.com/data/SKYPE-GPG-KEY
+    - name: add neofetch key
+      apt_key:
+        url: https://bintray.com/user/downloadSubjectPublicKey?username=bintray
     - name: add apt repos
       apt_repository:
         repo: "{{ item }}"
@@ -19,6 +22,7 @@
         - deb [arch=amd64] https://repo.skype.com/deb stable main
         - deb http://us.archive.ubuntu.com/ubuntu/ xenial multiverse
         - deb http://us.archive.ubuntu.com/ubuntu/ xenial-updates multiverse
+        - deb http://dl.bintray.com/dawidd6/neofetch jessie main
     - name: install skype
       apt:
         name: skypeforlinux
@@ -50,6 +54,7 @@
         - i3-wm
         - i3lock
         - i3status
+        - neofetch
         - python
         - python-all
         - python-all-dev
