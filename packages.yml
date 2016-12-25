@@ -63,6 +63,7 @@
         - python-pip
         - rxvt-unicode
         - redshift
+        - rofi
         - silversearcher-ag
         - unzip
         - virtualenv
