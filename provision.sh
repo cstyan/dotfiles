@@ -20,6 +20,9 @@ pip install ansible markupsafe
 echo "Run ansible provisioning playbooks."
 ANSIBLE_NOCOWS=1 ansible-playbook -K -c local -i localhost, packages.yml
 
+echo "Install Sublime Text."
+bash ./install-sublime.sh
+
 echo "Install Golang."
 rm -rf /usr/local/bin/go
 curl -O https://storage.googleapis.com/golang/$GO_VERSION
@@ -38,6 +41,7 @@ curl -O https://raw.githubusercontent.com/chriskempson/base16-gnome-terminal/mas
 source base16-ocean.dark.sh
 rm base16-ocean.dark.sh
 
-
+echo "\n ******************************************************* \n "
 echo "Remember to setup GOPATH/GOROOT, change shell to zsh,"
 echo "change the terminal profile, and restart your terminal."
+echo "\n ******************************************************* \n "
