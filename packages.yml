@@ -41,6 +41,7 @@
         - gccgo
         - gcc-multilib
         - gdb
+        - gtk-redshift
         # this probably isn't needed, since you need git to
         # clone the repo locally anyways
         - git
@@ -56,6 +57,7 @@
         - python-dev
         - python-pip
         - rxvt-unicode
+        - redshift
         - silversearcher-ag
         - unzip
         - virtualenv
