@@ -8,6 +8,7 @@ DOTFILES_REPO=$GIT_DIR/dotfiles
 echo "Setup symlinks."
 ln -sf $DOTFILES_REPO/dotfiles/.zshrc ~/.zshrc
 ln -sf $DOTFILES_REPO/dotfiles/i3-config ~/.config/i3/config
+ln -sf $DOTFILES_REPO/dotfiles/redshift.conf ~/.config/redshift.conf
 
 apt-get install software-properties-common
 add-apt respository "deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main"
