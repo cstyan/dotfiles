@@ -41,7 +41,8 @@ curl -O https://raw.githubusercontent.com/chriskempson/base16-gnome-terminal/mas
 source base16-ocean.dark.sh
 rm base16-ocean.dark.sh
 
-echo "\n ******************************************************* \n "
+echo
+echo "*******************************************************"
 echo "Remember to setup GOPATH/GOROOT, change shell to zsh,"
 echo "change the terminal profile, and restart your terminal."
-echo "\n ******************************************************* \n "
+echo "*******************************************************"
