@@ -55,6 +55,7 @@
         - i3lock
         - i3status
         - neofetch
+        - openconnect
         - python
         - python-all
         - python-all-dev
