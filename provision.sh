@@ -36,6 +36,9 @@ ln -s /usr/local/go/bin/* /usr/local/bin/
 echo "Install warp drive."
 curl -L https://github.com/mfaerevaag/wd/raw/master/install.sh | sh
 
+echo "Install direnv."
+bash ./install-direnv.sh
+
 echo "Install Monaco font."
 bash ./install-monaco.sh
 

@@ -16,3 +16,5 @@ antigen apply
 wd() {
   . /home/callum/bin/wd/wd.sh
 }
+
+eval "$(direnv hook zsh)"
