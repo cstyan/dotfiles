@@ -14,6 +14,9 @@
     - name: add neofetch key
       apt_key:
         url: https://bintray.com/user/downloadSubjectPublicKey?username=bintray
+    - name: add mopidy key
+      apt_key:
+        url: https://apt.mopidy.com/mopidy.gpg
     - name: add apt repos
       apt_repository:
         repo: "{{ item }}"
@@ -23,6 +26,8 @@
         - deb http://us.archive.ubuntu.com/ubuntu/ xenial multiverse
         - deb http://us.archive.ubuntu.com/ubuntu/ xenial-updates multiverse
         - deb http://dl.bintray.com/dawidd6/neofetch jessie main
+    - name: add mopidy repo
+      shell: sudo wget -q -O /etc/apt/sources.list.d/mopidy.list https://apt.mopidy.com/jessie.list
     - name: install skype
       apt:
         name: skypeforlinux
@@ -54,6 +59,10 @@
         - i3-wm
         - i3lock
         - i3status
+        - mopidy
+        - mopidy-spotify
+        - mopidy-alsamixer
+        - ncmpcpp
         - neofetch
         - openconnect
         - python
