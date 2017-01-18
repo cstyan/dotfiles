@@ -29,8 +29,9 @@ echo "Install Golang."
 rm -rf /usr/local/bin/go
 curl -O https://storage.googleapis.com/golang/$GO_VERSION
 tar -zxvf $GO_VERSION
-sudo mv go /usr/local/bin
+sudo mv go /usr/local/
 rm $GO_VERSION
+ln -s /usr/local/go/bin/* /usr/local/bin/
 
 echo "Install warp drive."
 curl -L https://github.com/mfaerevaag/wd/raw/master/install.sh | sh
