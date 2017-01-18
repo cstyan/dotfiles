@@ -59,6 +59,10 @@
         - i3-wm
         - i3lock
         - i3status
+        - keychain
+        - libmysqlclient-dev
+        - libxml2-dev
+        - libxslt1-dev
         - mopidy
         - mopidy-spotify
         - mopidy-alsamixer
