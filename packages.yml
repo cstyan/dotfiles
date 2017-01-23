@@ -79,6 +79,7 @@
         - redshift
         - rofi
         - silversearcher-ag
+        - ttf-ancient-fonts
         - unzip
         - virtualenv
         - virtualenvwrapper
