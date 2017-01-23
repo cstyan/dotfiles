@@ -18,3 +18,5 @@ wd() {
 }
 
 eval "$(direnv hook zsh)"
+
+export EDITOR="vim"
