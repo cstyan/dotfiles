@@ -108,6 +108,10 @@ workspace 7 output eDP1
 workspace 8 output eDP1
 workspace 9 output eDP1
 workspace 10 output eDP1
+# binding for moving workspace between monitors
+# outputs wrap, so we only ever need to move one direction
+# with a dual monitor setup
+bindsym $mod+Shift+Tab move workspace to output right
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -147,7 +151,7 @@ bindsym $mod+r mode "resize"
 bar {
     status_command i3status
     tray_output primary
-	position top
+	position bottom
 }
 
 exec --no-startup-id gtk-redshift
