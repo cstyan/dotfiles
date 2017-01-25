@@ -144,6 +144,9 @@ bar {
 	position bottom
 }
 
+# window style
+new_window 1pixel
+
 # script for setting up external monitor as primary
 exec_always --no-startup-id $mon_script
 
