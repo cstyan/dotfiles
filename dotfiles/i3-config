@@ -145,7 +145,7 @@ bar {
 }
 
 # window style
-new_window 1pixel
+new_window pixel 5
 
 # script for setting up external monitor as primary
 exec_always --no-startup-id $mon_script
