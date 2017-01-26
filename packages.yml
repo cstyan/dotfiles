@@ -60,7 +60,11 @@
         - i3lock
         - i3status
         - keychain
+        - libasound2-dev
+        - libfftw3-dev
         - libmysqlclient-dev
+        - libncursesw5-dev
+        - libssl-dev
         - libxml2-dev
         - libxslt1-dev
         - mopidy
