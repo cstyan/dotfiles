@@ -11,14 +11,14 @@ general {
         interval = 5
 }
 
-order += "disk /"
-order += "run_watch DHCP"
+#order += "disk /"
+#order += "run_watch DHCP"
 order += "run_watch VPN"
 order += "wireless _first_"
 order += "ethernet _first_"
 order += "battery 0"
 order += "cpu_temperature 0"
-order += "load"
+#order += "load"
 order += "tztime local"
 
 wireless _first_ {
@@ -55,7 +55,7 @@ cpu_temperature 0 {
 }
 
 load {
-        format = "CPU LOAD 1 min: %1min 5 min: %5min"
+        format = "CPU Load: %1min"
 }
 
 disk "/" {
