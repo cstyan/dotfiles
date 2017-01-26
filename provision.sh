@@ -43,6 +43,9 @@ bash ./install-direnv.sh
 echo "Install Monaco font."
 bash ./install-monaco.sh
 
+echo "Install nvm."
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+
 echo "Get gnome-terminal theme."
 curl -O https://raw.githubusercontent.com/chriskempson/base16-gnome-terminal/master/base16-ocean.dark.sh
 source base16-ocean.dark.sh

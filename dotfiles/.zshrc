@@ -20,3 +20,6 @@ wd() {
 eval "$(direnv hook zsh)"
 
 export EDITOR="vim"
+
+export NVM_DIR="/home/callum/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
