@@ -85,6 +85,7 @@
         - silversearcher-ag
         - ttf-ancient-fonts
         - unzip
+        - virtualbox-qt
         - virtualenv
         - virtualenvwrapper
         - vagrant
