@@ -45,6 +45,7 @@
         - cmake
         - clang
         - curl
+        - dunst
         - flashplugin-installer
         - gcc
         - gccgo
