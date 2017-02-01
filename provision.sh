@@ -5,13 +5,6 @@ GO_VERSION=go1.7.4.linux-amd64.tar.gz
 GIT_DIR=~/git
 DOTFILES_REPO=$GIT_DIR/dotfiles
 
-echo "Setup symlinks."
-ln -sf $DOTFILES_REPO/dotfiles/.zshrc ~/.zshrc
-ln -sf $DOTFILES_REPO/dotfiles/i3-config ~/.config/i3/config
-ln -sf $DOTFILES_REPO/dotfiles/i3status-config ~/.config/i3status/config
-ln -sf $DOTFILES_REPO/dotfiles/ncmpcpp ~/.ncmpcpp/config
-ln -sf $DOTFILES_REPO/dotfiles/redshift.conf ~/.config/redshift.conf
-
 apt-get install software-properties-common
 add-apt respository "deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main"
 apt-get update
@@ -51,6 +44,13 @@ echo "Get gnome-terminal theme."
 curl -O https://raw.githubusercontent.com/chriskempson/base16-gnome-terminal/master/base16-ocean.dark.sh
 source base16-ocean.dark.sh
 rm base16-ocean.dark.sh
+
+echo "Setup symlinks."
+ln -sf $DOTFILES_REPO/dotfiles/.zshrc ~/.zshrc
+ln -sf $DOTFILES_REPO/dotfiles/i3-config ~/.config/i3/config
+ln -sf $DOTFILES_REPO/dotfiles/i3status-config ~/.config/i3status/config
+ln -sf $DOTFILES_REPO/dotfiles/ncmpcpp ~/.ncmpcpp/config
+ln -sf $DOTFILES_REPO/dotfiles/redshift.conf ~/.config/redshift.conf
 
 echo
 echo "*******************************************************"
