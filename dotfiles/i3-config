@@ -131,6 +131,12 @@ mode "resize" {
     bindsym Up resize shrink height 1 px or 1 ppt
     bindsym Right resize grow width 1 px or 1 ppt
 
+    # same bindings, but for the Shift+arrow keys
+    bindsym Shift+Left resize shrink width 5 px or 5 ppt
+    bindsym Shift+Down resize grow height 5 px or 5 ppt
+    bindsym Shift+Up resize shrink height 5 px or 5 ppt
+    bindsym Shift+Right resize grow width 5 px or 5 ppt
+
     # back to normal: Enter or Escape
     bindsym Return mode "default"
     bindsym Escape mode "default"
