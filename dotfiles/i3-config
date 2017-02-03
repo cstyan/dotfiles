@@ -153,6 +153,9 @@ bar {
     status_command i3status
     tray_output none
 	position bottom
+    # disable scrolling through workspaces
+    bindsym button4 nop
+    bindsym button5 nop
 }
 
 # window style
