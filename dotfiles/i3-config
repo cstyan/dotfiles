@@ -60,10 +60,10 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+c split horizontal
 
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym $mod+v split vertical
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -115,7 +115,7 @@ bindsym $mod+Shift+0 move container to workspace 10
 bindsym $mod+Shift+Tab move workspace to output right
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
+bindsym $mod+Shift+w reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
