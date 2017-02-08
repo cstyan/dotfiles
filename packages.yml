@@ -46,6 +46,7 @@
         - clang
         - curl
         - dunst
+        - ffmpeg
         - flashplugin-installer
         - gcc
         - gccgo
@@ -105,3 +106,27 @@
         - libxi-dev
         - libxtst-dev
         - keepassx
+        # for obs
+        - pkg-config
+        - cmake
+        - qtbase5-dev
+        - checkinstall
+        - libx11-dev
+        - libgl1-mesa-dev
+        - libpulse-dev
+        - libxcomposite-dev
+        - libxinerama-dev
+        - libv4l-dev
+        - libudev-dev
+        - libfreetype6-dev
+        - libfontconfig-dev
+        # this is also in keepassx - libqt5x11extras5-dev
+        - libx264-dev
+        - libxcb-xinerama0-dev
+        - libxcb-shm0-dev
+        - libjack-jackd2-dev
+        - libcurl4-openssl-dev
+        - libavcodec-dev
+        - libavfilter-dev
+        - libavdevice-dev
+        - libfdk-aac-dev

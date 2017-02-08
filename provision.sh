@@ -9,18 +9,26 @@ apt-get install software-properties-common
 add-apt respository "deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main"
 apt-get update
 apt-get upgrade
+echo "*******************************************************"
 echo "Install python and ansible."
+echo "*******************************************************"
 apt-get install python-dev python-pip
 apt-get install ansible
 pip install ansible markupsafe
 
+echo "*******************************************************"
 echo "Run ansible provisioning playbooks."
+echo "*******************************************************"
 ANSIBLE_NOCOWS=1 ansible-playbook -K -c local -i localhost, packages.yml
 
+echo "*******************************************************"
 echo "Install Sublime Text."
+echo "*******************************************************"
 bash ./install-sublime.sh
 
+echo "*******************************************************"
 echo "Install Golang."
+echo "*******************************************************"
 rm -rf /usr/local/bin/go
 curl -O https://storage.googleapis.com/golang/$GO_VERSION
 tar -zxvf $GO_VERSION
@@ -28,24 +36,34 @@ sudo mv go /usr/local/
 rm $GO_VERSION
 ln -s /usr/local/go/bin/* /usr/local/bin/
 
+echo "*******************************************************"
 echo "Install warp drive."
+echo "*******************************************************"
 curl -L https://github.com/mfaerevaag/wd/raw/master/install.sh | sh
 
+echo "*******************************************************"
 echo "Install direnv."
+echo "*******************************************************"
 bash ./install-direnv.sh
 
+echo "*******************************************************"
 echo "Install Monaco font."
+echo "*******************************************************"
 bash ./install-monaco.sh
 
+echo "*******************************************************"
+echo "Install obs-studio"
+echo "*******************************************************"
+bash ./install-obs.sh
+
+echo "*******************************************************"
 echo "Install nvm."
+echo "*******************************************************"
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
 
-echo "Get gnome-terminal theme."
-curl -O https://raw.githubusercontent.com/chriskempson/base16-gnome-terminal/master/base16-ocean.dark.sh
-source base16-ocean.dark.sh
-rm base16-ocean.dark.sh
-
+echo "*******************************************************"
 echo "Setup symlinks."
+echo "*******************************************************"
 ln -sf $DOTFILES_REPO/dotfiles/.zshrc ~/.zshrc
 ln -sf $DOTFILES_REPO/dotfiles/i3-config ~/.config/i3/config
 ln -sf $DOTFILES_REPO/dotfiles/i3status-config ~/.config/i3status/config
