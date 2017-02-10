@@ -4,6 +4,7 @@
 GO_VERSION=go1.7.4.linux-amd64.tar.gz
 GIT_DIR=~/git
 DOTFILES_REPO=$GIT_DIR/dotfiles
+USER=callum
 
 apt-get install software-properties-common
 add-apt respository "deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main"
@@ -15,6 +16,7 @@ echo "*******************************************************"
 apt-get install python-dev python-pip
 apt-get install ansible
 pip install ansible markupsafe
+chown -R $USER:$USER ~/.ansible
 
 echo "*******************************************************"
 echo "Run ansible provisioning playbooks."
@@ -60,6 +62,7 @@ echo "*******************************************************"
 echo "Install nvm."
 echo "*******************************************************"
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+chown -R $USER:$USER ~/.nvm
 
 echo "*******************************************************"
 echo "Setup symlinks."
