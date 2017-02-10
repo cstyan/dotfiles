@@ -1,0 +1,28 @@
+! behaviour changes
+URxvt.perl-ext-common: default,selection-to-clipboard
+URxvt.clipboard.autocopy: false
+
+URxvt.font: xft:Droid Sans Mono for Powerline:size=14
+URxvt.scrollstyle: plain
+!URxvt.letterSpace:-1
+
+! colours
+URxvt.foreground: #E8DFD6
+URxvt.background: #021B21
+!URxvt.cursorColor:  #2E3340
+URxvt.color0:       #032C36
+URxvt.color8:       #065F73
+URxvt.color1:       #C2454E
+URxvt.color9:       #EF5847
+URxvt.color2:       #7CBF9E
+URxvt.color10:      #A2D9B1
+URxvt.color3:       #8A7A63
+URxvt.color11:      #BEB090
+URxvt.color4:       #2E3340
+URxvt.color12:      #61778D
+URxvt.color5:       #FF5879
+URxvt.color13:      #FF99A1
+URxvt.color6:       #44B5B1
+URxvt.color14:      #9ED9D8
+URxvt.color7:       #F2F1B9
+URxvt.color15:      #F6F6C9
