@@ -168,8 +168,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# custom binds
-bindsym $mod+t exec i3lock
+# use mod+delete for lock, keep keys closer to homerow for
+# more frequently used actions
+bindsym $mod+Delete exec i3lock
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
