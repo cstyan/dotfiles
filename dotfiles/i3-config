@@ -11,6 +11,8 @@ set $mon_script /home/callum/git/dotfiles/chmonitor
 set $focused_ind #F83163
 set $focused_brd #2de5a2
 
+# workspaces
+
 
 ###################################################
 # General
@@ -58,8 +60,6 @@ bindsym $mod+j focus left
 bindsym $mod+k focus down
 bindsym $mod+l focus up
 bindsym $mod+semicolon focus right
-
-# alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
@@ -70,8 +70,6 @@ bindsym $mod+Shift+j move left
 bindsym $mod+Shift+k move down
 bindsym $mod+Shift+l move up
 bindsym $mod+Shift+semicolon move right
-
-# alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
@@ -79,7 +77,6 @@ bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
 bindsym $mod+c split horizontal
-
 # split in vertical orientation
 bindsym $mod+v split vertical
 
