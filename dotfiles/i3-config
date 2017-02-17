@@ -215,3 +215,4 @@ exec --no-startup-id gtk-redshift
 # touchpad settings
 exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "Synaptics Two-Finger Scrolling" 1, 1
 exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "Synaptics Scrolling Distance" -116, 116
+exec --no-startup-id synclient PalmDetect=1 > /dev/null 2>&1 || true
