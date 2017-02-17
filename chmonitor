@@ -6,7 +6,8 @@ EXT="DP1"
 DIRECTION="left"
 
 if (xrandr | grep "$EXT disconnected"); then
-    xrandr --output $IN --auto --output $EXT --off 
+    xrandr --output $IN --auto --output $EXT --off
+    synclient TouchpadOff=0
 else
     xrandr --output $IN --auto --output $EXT  --primary --auto --$DIRECTION-of $IN
     # move the first 5 workspaces to the external display
@@ -20,4 +21,5 @@ else
     i3-msg move workspace to $EXT
     i3-msg workspace 5
     i3-msg move workspace to $EXT
+    synclient TouchpadOff=1
 fi
