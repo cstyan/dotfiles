@@ -45,6 +45,7 @@
         - cmake
         - clang
         - curl
+        - docker.io
         - dunst
         - ffmpeg
         - flashplugin-installer
