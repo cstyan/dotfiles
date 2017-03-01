@@ -206,8 +206,11 @@ bar {
 
 # script for setting up external monitor as primary
 exec_always --no-startup-id $mon_script
-exec --no-startup-id gtk-redshift
 
+# swap capslock and left ctrl
+exec_always --no-startup-id /usr/bin/setxkbmap -option "ctrl:swapcaps"
+
+exec --no-startup-id gtk-redshift
 
 ###################################################
 # misc
