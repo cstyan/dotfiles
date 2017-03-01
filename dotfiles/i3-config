@@ -117,16 +117,25 @@ bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
 # move focused container to workspace
-bindsym $mod+$ctrl+1 move container to workspace 1
-bindsym $mod+$ctrl+2 move container to workspace 2
-bindsym $mod+$ctrl+3 move container to workspace 3
-bindsym $mod+$ctrl+4 move container to workspace 4
-bindsym $mod+$ctrl+5 move container to workspace 5
-bindsym $mod+$ctrl+q move container to workspace 6
-bindsym $mod+$ctrl+w move container to workspace 7
-bindsym $mod+$ctrl+e move container to workspace 8
-bindsym $mod+$ctrl+9 move container to workspace 9
-bindsym $mod+$ctrl+0 move container to workspace 10
+mode "move" {
+    bindsym 1 move container to workspace 1
+    bindsym 2 move container to workspace 2
+    bindsym 3 move container to workspace 3
+    bindsym 4 move container to workspace 4
+    bindsym 5 move container to workspace 5
+    bindsym $mod+1 move container to workspace 6
+    bindsym $mod+2 move container to workspace 7
+    bindsym $mod+3 move container to workspace 8
+    bindsym $mod+4 move container to workspace 9
+    bindsym $mod+5 move container to workspace 0
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+    bindsym $mod+m mode "default"
+}
+
+bindsym $mod+m mode "move"
 
 # binding for moving workspace between monitors
 # outputs wrap, so we only ever need to move one direction
@@ -168,6 +177,7 @@ mode "resize" {
     # back to normal: Enter or Escape
     bindsym Return mode "default"
     bindsym Escape mode "default"
+    bindsym $mod+r mode "default"
 }
 
 bindsym $mod+r mode "resize"
