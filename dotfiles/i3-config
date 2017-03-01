@@ -5,6 +5,7 @@
 
 # general vars
 set $mod Mod1
+set $ctrl Control
 set $mon_script /home/callum/git/dotfiles/chmonitor
 
 # colour vars
