@@ -58,6 +58,10 @@ bindsym $mod+Tab   exec "rofi -show window"
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
+# disable scrolling through tabs in tabbed or stacked mode
+bindsym button4 nop
+bindsym button5 nop
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
