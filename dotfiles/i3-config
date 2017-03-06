@@ -127,11 +127,11 @@ mode "move" {
     bindsym 3 move container to workspace 3
     bindsym 4 move container to workspace 4
     bindsym 5 move container to workspace 5
-    bindsym $mod+1 move container to workspace 6
-    bindsym $mod+2 move container to workspace 7
-    bindsym $mod+3 move container to workspace 8
-    bindsym $mod+4 move container to workspace 9
-    bindsym $mod+5 move container to workspace 0
+    bindsym q move container to workspace 6
+    bindsym w move container to workspace 7
+    bindsym e move container to workspace 8
+    bindsym 9 move container to workspace 9
+    bindsym 0 move container to workspace 0
 
     # back to normal: Enter or Escape
     bindsym Return mode "default"
