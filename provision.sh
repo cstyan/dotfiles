@@ -31,7 +31,7 @@ bash ./install-sublime.sh
 echo "*******************************************************"
 echo "Install Golang."
 echo "*******************************************************"
-rm -rf /usr/local/bin/go
+rm -rf /usr/local/bin/go*
 curl -O https://storage.googleapis.com/golang/$GO_VERSION
 tar -zxvf $GO_VERSION
 sudo mv go /usr/local/
