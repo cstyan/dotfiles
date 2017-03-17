@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # vars
-GO_VERSION=go1.7.4.linux-amd64.tar.gz
+GO_VERSION=go1.8.linux-amd64.tar.gz
 GIT_DIR=~/git
 DOTFILES_REPO=$GIT_DIR/dotfiles
 USER=callum
