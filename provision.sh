@@ -74,6 +74,7 @@ ln -sf $DOTFILES_REPO/dotfiles/i3-config ~/.config/i3/config
 ln -sf $DOTFILES_REPO/dotfiles/i3status-config ~/.config/i3status/config
 ln -sf $DOTFILES_REPO/dotfiles/ncmpcpp ~/.ncmpcpp/config
 ln -sf $DOTFILES_REPO/dotfiles/redshift.conf ~/.config/redshift.conf
+ln -sf $DOTFILES_REPO/dotfiles/dunstrc ~/.config/dunstrc
 
 echo
 echo "*******************************************************"
