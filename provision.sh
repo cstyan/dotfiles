@@ -26,7 +26,7 @@ ANSIBLE_NOCOWS=1 ansible-playbook -K -c local -i localhost, packages.yml
 echo "*******************************************************"
 echo "Install Sublime Text."
 echo "*******************************************************"
-bash ./install-sublime.sh
+bash ./scripts/install-sublime.sh
 
 echo "*******************************************************"
 echo "Install Golang."
@@ -47,17 +47,17 @@ curl -L https://github.com/mfaerevaag/wd/raw/master/install.sh | sh
 echo "*******************************************************"
 echo "Install direnv."
 echo "*******************************************************"
-bash ./install-direnv.sh
+bash ./scripts/install-direnv.sh
 
 echo "*******************************************************"
 echo "Install Monaco font."
 echo "*******************************************************"
-bash ./install-monaco.sh
+bash ./scripts/install-monaco.sh
 
 echo "*******************************************************"
 echo "Install obs-studio"
 echo "*******************************************************"
-bash ./install-obs.sh
+bash ./scripts/install-obs.sh
 
 echo "*******************************************************"
 echo "Install nvm."
