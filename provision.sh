@@ -66,6 +66,11 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | b
 chown -R $USER:$USER ~/.nvm
 
 echo "*******************************************************"
+echo "Install Telegram."
+echo "*******************************************************"
+bash ./scripts/install-telegram.sh
+
+echo "*******************************************************"
 echo "Setup symlinks."
 echo "*******************************************************"
 mkdir ~/.config/dunst
