@@ -14,19 +14,17 @@ set $urgent_brd #9862EC
 set $f_inactive_brd #42bff0
 # indicator only shows on focused window anyways
 set $focused_ind #F83163
-
-# workspaces
-
+set $focused_text #000000
 
 ###################################################
 # General
 ###################################################
 
 # bg is the one that actually changes the visible border around an i3 container
-# colours                border   bg               text     ind            chld_b
-client.focused          #4c7899  $focused_brd     #ffffff  $focused_ind   #285577
-client.urgent           #333333  $urgent_brd      #ffffff  #2e9ef4        #900000
-client.focused_inactive #333333  $f_inactive_brd  #ffffff  #484e50        #5f676a
+# colours                border   bg               text           ind             chld_b
+client.focused          #4c7899  $focused_brd     $focused_text  $focused_ind    #285577
+client.urgent           #333333  $urgent_brd      #ffffff         #2e9ef4        #900000
+client.focused_inactive #333333  $f_inactive_brd  #ffffff         #484e50        #5f676a
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
