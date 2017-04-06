@@ -39,6 +39,8 @@ focus_follows_mouse no
 # window style
 new_window pixel 5
 
+# enable back and forth ws switching
+workspace_auto_back_and_forth yes
 
 ###################################################
 # Key bindings
