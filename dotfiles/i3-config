@@ -11,7 +11,7 @@ set $mon_script /home/callum/git/dotfiles/chmonitor
 # colour vars
 set $focused_brd #2de5a2
 set $urgent_brd #9862EC
-set $f_inactive_brd #59D1FF
+set $f_inactive_brd #42bff0
 # indicator only shows on focused window anyways
 set $focused_ind #F83163
 
