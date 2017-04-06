@@ -14,7 +14,7 @@ set $urgent_brd #9862EC
 set $f_inactive_brd #42bff0
 # indicator only shows on focused window anyways
 set $focused_ind #F83163
-set $focused_text #000000
+set $focused_text #333333
 
 ###################################################
 # General
