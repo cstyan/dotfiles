@@ -22,7 +22,7 @@ set $focused_text #333333
 
 # bg is the one that actually changes the visible border around an i3 container
 # colours                border   bg               text           ind             chld_b
-client.focused          #4c7899  $focused_brd     $focused_text  $focused_ind    #285577
+client.focused          #4c7899  $focused_brd     $focused_text  $focused_ind    $focused_brd
 client.urgent           #333333  $urgent_brd      #ffffff         #2e9ef4        #900000
 client.focused_inactive #333333  $f_inactive_brd  #ffffff         #484e50        #5f676a
 
