@@ -2,24 +2,31 @@
 
 # toggles the external monitor on/off in specified direction
 IN="eDP1"
-EXT="DP1"
+EXT_DP="DP1"
+EXT_HDMI="HDMI2"
 DIRECTION="left"
 
-if (xrandr | grep "$EXT disconnected"); then
-    xrandr --output $IN --auto --output $EXT --off
-    synclient TouchpadOff=0
-else
-    xrandr --output $IN --auto --output $EXT  --primary --auto --$DIRECTION-of $IN
+use_external() {
+    xrandr --output $IN --auto --output $1  --primary --auto --$DIRECTION-of $IN
     # move the first 5 workspaces to the external display
     i3-msg workspace 1
-    i3-msg move workspace to $EXT
+    i3-msg move workspace to $1
     i3-msg workspace 2
-    i3-msg move workspace to $EXT
+    i3-msg move workspace to $1
     i3-msg workspace 3
-    i3-msg move workspace to $EXT
+    i3-msg move workspace to $1
     i3-msg workspace 4
-    i3-msg move workspace to $EXT
+    i3-msg move workspace to $1
     i3-msg workspace 5
-    i3-msg move workspace to $EXT
+    i3-msg move workspace to $1
     synclient TouchpadOff=1
+}
+
+if (xrandr | grep "$EXT_DP connected"); then
+    use_external $EXT_DP
+elif (xrandr | grep "$EXT_HDMI connected"); then
+    use_external $EXT_HDMI
+else
+    xrandr --output $IN --auto --output $EXT --off
+    synclient TouchpadOff=0
 fi
