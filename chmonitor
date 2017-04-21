@@ -27,6 +27,6 @@ if (xrandr | grep -w "$EXT_DP connected"); then
 elif (xrandr | grep -w "$EXT_HDMI connected"); then
     use_external $EXT_HDMI
 else
-    xrandr --output $IN --auto --output $EXT --off
+    xrandr --output $IN --auto --output $EXT_DP --off --output $EXT_HDMI --off
     synclient TouchpadOff=0
 fi
