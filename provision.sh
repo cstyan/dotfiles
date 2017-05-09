@@ -2,6 +2,8 @@
 
 # vars
 GO_VERSION=go1.8.linux-amd64.tar.gz
+VAGRANT_VERSION=1.9.3
+VAGRANT_DEB=vagrant_"$VAGRANT_VERSION"_x86_64.deb
 GIT_DIR=~/git
 DOTFILES_REPO=$GIT_DIR/dotfiles
 USER=callum
@@ -38,6 +40,13 @@ tar -zxvf $GO_VERSION
 sudo mv go /usr/local/
 rm $GO_VERSION
 ln -s /usr/local/go/bin/* /usr/local/bin/
+
+echo "*******************************************************"
+echo "Install Vagrant."
+echo "*******************************************************"
+curl -O https://releases.hashicorp.com/vagrant/"$VAGRANT_VERSION"/"$VAGRANT_DEB"
+dpkg -i $VAGRANT_DEB
+rm $VAGRANT_DEB
 
 echo "*******************************************************"
 echo "Install warp drive."
