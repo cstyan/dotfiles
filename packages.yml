@@ -60,6 +60,7 @@
         # clone the repo locally anyways
         - git
         - g++
+        - htop
         - i3
         - i3-wm
         - i3lock
