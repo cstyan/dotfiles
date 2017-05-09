@@ -17,6 +17,12 @@
     - name: add mopidy key
       apt_key:
         url: https://apt.mopidy.com/mopidy.gpg
+    - name: add virtualbox keys
+      apt_key:
+        url: "{{ item }}"
+    with_items:
+      - https://www.virtualbox.org/download/oracle_vbox_2016.asc
+      - https://www.virtualbox.org/download/oracle_vbox.asc
     - name: add apt repos
       apt_repository:
         repo: "{{ item }}"
@@ -26,6 +32,8 @@
         - deb http://us.archive.ubuntu.com/ubuntu/ xenial multiverse
         - deb http://us.archive.ubuntu.com/ubuntu/ xenial-updates multiverse
         - deb http://dl.bintray.com/dawidd6/neofetch jessie main
+        - deb http://download.virtualbox.org/virtualbox/debian xenial contrib
+        - deb http://ppa.launchpad.net/aguignard/ppa/ubuntu xenial main 
     - name: add mopidy repo
       shell: sudo wget -q -O /etc/apt/sources.list.d/mopidy.list https://apt.mopidy.com/jessie.list
     - name: install skype
