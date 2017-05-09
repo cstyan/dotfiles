@@ -137,7 +137,7 @@ mode "move" {
     bindsym w move container to workspace 7
     bindsym e move container to workspace 8
     bindsym 9 move container to workspace 9
-    bindsym 0 move container to workspace 0
+    bindsym 0 move container to workspace 10
 
     # back to normal: Enter or Escape
     bindsym Return mode "default"
