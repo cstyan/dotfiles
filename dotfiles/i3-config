@@ -50,7 +50,7 @@ for_window [class=".*"] title_format " %title"
 ###################################################
 
 # start a terminal
-bindsym $mod+Return exec rxvt-unicode
+bindsym $mod+Return exec "rxvt-unicode -bc"
 
 # kill focused window
 bindsym $mod+Shift+q kill
