@@ -19,7 +19,6 @@ use_external() {
     i3-msg move workspace to $1
     i3-msg workspace 5
     i3-msg move workspace to $1
-    synclient TouchpadOff=1
 }
 
 if (xrandr | grep -w "$EXT_DP connected"); then
