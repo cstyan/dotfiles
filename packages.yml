@@ -63,6 +63,7 @@
         - gccgo
         - gcc-multilib
         - gdb
+        - geoclue-2.0
         - gtk-redshift
         # this probably isn't needed, since you need git to
         # clone the repo locally anyways
