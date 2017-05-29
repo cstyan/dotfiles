@@ -39,9 +39,6 @@ focus_follows_mouse no
 # window style
 new_window pixel 5
 
-# enable back and forth ws switching
-workspace_auto_back_and_forth yes
-
 # title format for all windows
 for_window [class=".*"] title_format " %title"
 
@@ -125,6 +122,7 @@ bindsym $mod+w workspace 7
 bindsym $mod+e workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
+bindsym $mod+g workspace back_and_forth
 
 # move focused container to workspace
 mode "move" {
