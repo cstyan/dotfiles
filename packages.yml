@@ -17,10 +17,13 @@
     - name: add mopidy key
       apt_key:
         url: https://apt.mopidy.com/mopidy.gpg
+    - name: add riot.im key
+      apt_key:
+        url: https://riot.im/packages/debian/repo-key.asc 
     - name: add virtualbox keys
       apt_key:
         url: "{{ item }}"
-    with_items:
+      with_items:
       - https://www.virtualbox.org/download/oracle_vbox_2016.asc
       - https://www.virtualbox.org/download/oracle_vbox.asc
     - name: add apt repos
@@ -33,7 +36,9 @@
         - deb http://us.archive.ubuntu.com/ubuntu/ xenial-updates multiverse
         - deb http://dl.bintray.com/dawidd6/neofetch jessie main
         - deb http://download.virtualbox.org/virtualbox/debian xenial contrib
-        - deb http://ppa.launchpad.net/aguignard/ppa/ubuntu xenial main 
+        - deb http://ppa.launchpad.net/aguignard/ppa/ubuntu xenial main
+        - deb https://riot.im/packages/debian/ jessie main
+        - deb-src https://riot.im/packages/debian/ jessie main 
     - name: add mopidy repo
       shell: sudo wget -q -O /etc/apt/sources.list.d/mopidy.list https://apt.mopidy.com/jessie.list
     - name: install skype
@@ -96,6 +101,7 @@
         - python-pip
         - rxvt-unicode
         - redshift
+        - riot-web
         - rofi
         - scrot
         - silversearcher-ag
