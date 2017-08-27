@@ -97,6 +97,7 @@ ln -sf $DOTFILES_REPO/dotfiles/i3status-config ~/.config/i3status/config
 ln -sf $DOTFILES_REPO/dotfiles/ncmpcpp ~/.ncmpcpp/config
 ln -sf $DOTFILES_REPO/dotfiles/redshift.conf ~/.config/redshift.conf
 ln -sf $DOTFILES_REPO/dotfiles/dunstrc ~/.config/dunst/dunstrc
+ln -sf $DOTFILES_REPO/dotfiles/ranger/rc.conf ~/.config/ranger/rc.conf
 
 echo
 echo "*******************************************************"

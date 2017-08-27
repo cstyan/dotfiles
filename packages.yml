@@ -99,6 +99,7 @@
         - python-dev
         - python-dev
         - python-pip
+        - ranger
         - rxvt-unicode
         - redshift
         - riot-web
@@ -165,3 +166,10 @@
         - libxkbcommon-dev
         - libxkbcommon-x11-dev
         - libxcb-xrm-dev
+        # for ranger
+        - caca-utils
+        - highlight
+        - atool
+        - w3m
+        - poppler-utils
+        - mediainfo

@@ -29,3 +29,5 @@ if [ -f '/home/callum/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/callum/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/callum/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+source <(kubectl completion bash)
