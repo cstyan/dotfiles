@@ -11,7 +11,7 @@ USER=callum
 git submodule sync; git submodule update --init
 
 apt-get install software-properties-common
-add-apt respository "deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main"
+add-apt-respository "ppa:ansible/ansible"
 apt-get update
 apt-get upgrade
 echo "*******************************************************"
