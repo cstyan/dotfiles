@@ -20,6 +20,9 @@
     - name: add riot.im key
       apt_key:
         url: https://riot.im/packages/debian/repo-key.asc 
+    - name: add brave key
+      apt_key:
+        url: https://s3-us-west-2.amazonaws.com/brave-apt/keys.asc
     - name: add virtualbox keys
       apt_key:
         url: "{{ item }}"
@@ -38,7 +41,8 @@
         - deb http://download.virtualbox.org/virtualbox/debian xenial contrib
         - deb http://ppa.launchpad.net/aguignard/ppa/ubuntu xenial main
         - deb https://riot.im/packages/debian/ jessie main
-        - deb-src https://riot.im/packages/debian/ jessie main 
+        - deb-src https://riot.im/packages/debian/ jessie main
+        - deb [arch=amd64] https://s3-us-west-2.amazonaws.com/brave-apt `lsb_release -sc` main
     - name: add mopidy repo
       shell: sudo wget -q -O /etc/apt/sources.list.d/mopidy.list https://apt.mopidy.com/jessie.list
     - name: install skype
@@ -56,6 +60,7 @@
         - automake
         - autoconf
         - autotools-dev
+        - brave
         - build-essential
         - cmake
         - clang
