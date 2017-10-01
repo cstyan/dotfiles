@@ -42,7 +42,7 @@
         - deb http://ppa.launchpad.net/aguignard/ppa/ubuntu xenial main
         - deb https://riot.im/packages/debian/ jessie main
         - deb-src https://riot.im/packages/debian/ jessie main
-        - deb [arch=amd64] https://s3-us-west-2.amazonaws.com/brave-apt `lsb_release -sc` main
+        - deb [arch=amd64] https://s3-us-west-2.amazonaws.com/brave-apt xenial main
     - name: add mopidy repo
       shell: sudo wget -q -O /etc/apt/sources.list.d/mopidy.list https://apt.mopidy.com/jessie.list
     - name: install skype
