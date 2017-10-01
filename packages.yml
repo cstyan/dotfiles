@@ -44,12 +44,12 @@
         - deb-src https://riot.im/packages/debian/ jessie main
         - deb [arch=amd64] https://s3-us-west-2.amazonaws.com/brave-apt xenial main
     - name: add mopidy repo
-      shell: sudo wget -q -O /etc/apt/sources.list.d/mopidy.list https://apt.mopidy.com/jessie.list
+      shell: wget -q -O /etc/apt/sources.list.d/mopidy.list https://apt.mopidy.com/jessie.list
     - name: install skype
       apt:
         name: skypeforlinux
     - name: use up to date repo for i3 install
-      shell: sudo echo "deb http://debian.sur5r.net/i3/ $(grep '^DISTRIB_CODENAME=' /etc/lsb-release | cut -f2 -d=) universe" >> /etc/apt/sources.list.d/sur5r-i3.list
+      shell: echo "deb http://debian.sur5r.net/i3/ $(grep '^DISTRIB_CODENAME=' /etc/lsb-release | cut -f2 -d=) universe" >> /etc/apt/sources.list.d/sur5r-i3.list
     - name: install packages on Debian/Ubuntu
       apt:
         name: "{{ item }}"
