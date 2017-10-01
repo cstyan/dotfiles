@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # vars
-GO_VERSION=go1.8.linux-amd64.tar.gz
 VAGRANT_VERSION=1.9.3
 VAGRANT_DEB=vagrant_"$VAGRANT_VERSION"_x86_64.deb
 GIT_DIR=~/git
@@ -35,13 +34,7 @@ bash ./scripts/install-sublime.sh
 echo "*******************************************************"
 echo "Install Golang."
 echo "*******************************************************"
-rm -rf /usr/local/bin/go*
-rm -rf /usr/local/go
-curl -O https://storage.googleapis.com/golang/$GO_VERSION
-tar -zxvf $GO_VERSION
-sudo mv go /usr/local/
-rm $GO_VERSION
-ln -s /usr/local/go/bin/* /usr/local/bin/
+bash ./scripts/install-golang.sh
 
 echo "*******************************************************"
 echo "Install Vagrant."
