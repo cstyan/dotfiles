@@ -6,6 +6,12 @@ URxvt.font: xft:Droid Sans Mono for Powerline:size=14
 URxvt.scrollstyle: plain
 !URxvt.letterSpace:-1
 
+! keysyms
+URxvt.keysym.Control-Up:   \033[1;5A
+URxvt.keysym.Control-Down:    \033[1;5B
+URxvt.keysym.Control-Left:    \033[1;5D
+URxvt.keysym.Control-Right: \033[1;5C
+
 ! colours
 URxvt.foreground: #E8DFD6
 URxvt.background: #021B21
@@ -26,3 +32,4 @@ URxvt.color6:       #44B5B1
 URxvt.color14:      #9ED9D8
 URxvt.color7:       #F2F1B9
 URxvt.color15:      #F6F6C9
+
