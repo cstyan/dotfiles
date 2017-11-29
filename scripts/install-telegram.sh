@@ -1,4 +1,4 @@
-TELEGRAM_VERSION=0.10.20
+TELEGRAM_VERSION=1.1.23
 
 curl -O https://updates.tdesktop.com/tlinux/tsetup."$TELEGRAM_VERSION".tar.xz
 tar -xvf tsetup."$TELEGRAM_VERSION".tar.xz
