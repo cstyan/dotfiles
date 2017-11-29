@@ -7,7 +7,7 @@ EXT_HDMI="HDMI2"
 DIRECTION="left"
 
 use_external() {
-    xrandr --output $IN --auto --output $1  --primary --auto --$DIRECTION-of $IN
+    xrandr --output $IN --auto --output $1  --primary --auto --$DIRECTION-of $IN --output $IN --off
     # move the first 5 workspaces to the external display
     i3-msg workspace 1
     i3-msg move workspace to $1
