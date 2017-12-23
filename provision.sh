@@ -9,15 +9,16 @@ USER=callum
 
 git submodule sync; git submodule update --init
 
-apt-get install software-properties-common
+apt install software-properties-common
 add-apt-respository "ppa:ansible/ansible"
-apt-get update
-apt-get upgrade
+apt update
+apt upgrade
+
 echo "*******************************************************"
 echo "Install python and ansible."
 echo "*******************************************************"
-apt-get install python-dev python-pip
-apt-get install ansible
+apt install python-dev python-pip
+apt install ansible
 pip install ansible markupsafe
 chown -R $USER:$USER ~/.ansible
 
