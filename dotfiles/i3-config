@@ -231,11 +231,13 @@ exec_always --no-startup-id $mon_script
 # swap capslock and left ctrl
 exec_always --no-startup-id /usr/bin/setxkbmap -option "ctrl:swapcaps"
 
-exec --no-startup-id gtk-redshift
 
 ###################################################
 # misc
 ###################################################
+
+# start redshift so my eyes don't bleed
+exec --no-startup-id redshift -m randr -l 49.1458:123
 
 # touchpad settings
 exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "Synaptics Two-Finger Scrolling" 1, 1
