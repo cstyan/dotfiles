@@ -192,7 +192,7 @@ bindsym $mod+r mode "resize"
 
 # use mod+delete for lock, keep keys closer to homerow for
 # more frequently used actions
-bindsym $mod+Delete exec i3lock
+bindsym $mod+Delete exec "~/.config/lock/lock.sh"
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
