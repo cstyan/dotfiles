@@ -1,5 +1,5 @@
 [global]
-    font = Monospace 8
+    font = Monaco 10
     
     # Allow a small subset of html markup:
     #   <b>bold</b>
@@ -148,8 +148,8 @@
     icon_folders = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
 
 [frame]
-    width = 3
-    color = "#aaaaaa"
+    width = 5
+    color = "#48b9c7"
 
 [shortcuts]
 
@@ -175,71 +175,16 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#222222"
-    foreground = "#888888"
+    background = "#021B21"
+    foreground = "#f2f2f2"
     timeout = 10
 
 [urgency_normal]
-    background = "#285577"
-    foreground = "#ffffff"
+    background = "#021B21"
+    foreground = "#f2f2f2"
     timeout = 10
 
 [urgency_critical]
-    background = "#900000"
-    foreground = "#ffffff"
+    background = "#021B21"
+    foreground = "#f2f2f2"
     timeout = 0
-
-
-# Every section that isn't one of the above is interpreted as a rules to
-# override settings for certain messages.
-# Messages can be matched by "appname", "summary", "body", "icon", "category",
-# "msg_urgency" and you can override the "timeout", "urgency", "foreground",
-# "background", "new_icon" and "format".
-# Shell-like globbing will get expanded.
-#
-# SCRIPTING
-# You can specify a script that gets run when the rule matches by
-# setting the "script" option.
-# The script will be called as follows:
-#   script appname summary body icon urgency
-# where urgency can be "LOW", "NORMAL" or "CRITICAL".
-# 
-# NOTE: if you don't want a notification to be displayed, set the format
-# to "".
-# NOTE: It might be helpful to run dunst -print in a terminal in order
-# to find fitting options for rules.
-
-#[espeak]
-#    summary = "*"
-#    script = dunst_espeak.sh
-
-#[script-test]
-#    summary = "*script*"
-#    script = dunst_test.sh
-
-#[ignore]
-#    # This notification will not be displayed
-#    summary = "foobar"
-#    format = ""
-
-#[signed_on]
-#    appname = Pidgin
-#    summary = "*signed on*"
-#    urgency = low
-#
-#[signed_off]
-#    appname = Pidgin
-#    summary = *signed off*
-#    urgency = low
-#
-#[says]
-#    appname = Pidgin
-#    summary = *says*
-#    urgency = critical
-#
-#[twitter]
-#    appname = Pidgin
-#    summary = *twitter.com*
-#    urgency = normal
-#
-# vim: ft=cfg
