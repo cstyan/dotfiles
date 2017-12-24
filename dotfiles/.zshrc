@@ -31,3 +31,6 @@ if [ -f '/home/callum/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/
 if [ -f '/home/callum/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/callum/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
 source <(kubectl completion bash)
+
+# aliases
+alias rsdunst='killall dunst;notify-send foo'
