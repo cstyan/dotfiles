@@ -9,7 +9,7 @@ antigen bundle ssh-agent
 
 antigen bundle zsh-users/zsh-syntax-highlighting
 
-antigen theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme bullet-train
+antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
 
 antigen apply
 
@@ -34,3 +34,14 @@ source <(kubectl completion bash)
 
 # aliases
 alias rsdunst='killall dunst;notify-send foo'
+
+# prompt settings
+SPACESHIP_PROMPT_ADD_NEWLINE=false
+SPACESHIP_PROMPT_SEPARATE_LINE=false
+SPACESHIP_PROMPT_DEFAULT_PREFIX=test
+SPACESHIP_DOCKER_SHOW=false
+SPACESHIP_KUBECONTEXT_COLOR=blue
+SPACESHIP_GOLANG_SYMBOL="go "
+SPACESHIP_HOST_SHOW=true
+SPACESHIP_DIR_TRUNC=
+SPACESHIP_GIT_PREFIX="branch "
