@@ -4,3 +4,6 @@
 [submodule "fonts"]
 	path = fonts
 	url = https://github.com/powerline/fonts
+[submodule "termite-install"]
+	path = termite-install
+	url = git@github.com:Corwind/termite-install.git

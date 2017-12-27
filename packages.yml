@@ -104,7 +104,6 @@
         - python-dev
         - python-pip
         - ranger
-        - rxvt-unicode
         - redshift
         - riot-web
         - rofi
