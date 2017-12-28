@@ -217,6 +217,11 @@ bar {
     # disable scrolling through workspaces
     bindsym button4 nop
     bindsym button5 nop
+
+    colors {
+        focused_workspace #0b5b3e #2de5a2 #000000
+        binding_mode #940529 #F83163 #000000
+    }
 }
 
 
