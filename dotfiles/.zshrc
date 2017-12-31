@@ -24,12 +24,6 @@ export EDITOR="vim"
 export NVM_DIR="/home/callum/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/callum/Downloads/google-cloud-sdk/path.zsh.inc' ]; then source '/home/callum/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/callum/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/callum/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
-
 source <(kubectl completion bash)
 
 # aliases
@@ -45,3 +39,9 @@ SPACESHIP_GOLANG_SYMBOL="go "
 SPACESHIP_HOST_SHOW=true
 SPACESHIP_DIR_TRUNC=
 SPACESHIP_GIT_PREFIX="branch "
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/callum/google-cloud-sdk/path.zsh.inc' ]; then source '/home/callum/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/callum/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/callum/google-cloud-sdk/completion.zsh.inc'; fi
