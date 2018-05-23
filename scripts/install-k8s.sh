@@ -1,5 +1,5 @@
-MINIKUBE_VERSION=v0.24.1
-HELM_VERSION=v2.7.2
+MINIKUBE_VERSION=v0.25.2
+HELM_VERSION=v2.8.2
 HELM_TARBALL=helm-"$HELM_VERSION"-linux-amd64.tar.gz
 
 echo "**** Install kubectl ****"
