@@ -45,3 +45,5 @@ if [ -f '/home/callum/google-cloud-sdk/path.zsh.inc' ]; then source '/home/callu
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/callum/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/callum/google-cloud-sdk/completion.zsh.inc'; fi
+
+export PATH=/home/callum/go/bin:$PATH
