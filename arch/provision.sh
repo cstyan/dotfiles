@@ -42,4 +42,5 @@ ln -sf $DOTFILES_REPO/dotfiles/i3status-config ~/.config/i3status/config
 ln -sf $DOTFILES_REPO/dotfiles/redshift.conf ~/.config/redshift.conf
 ln -sf $DOTFILES_REPO/dotfiles/dunstrc ~/.config/dunst/dunstrc
 ln -sf $DOTFILES_REPO/dotfiles/ranger.conf ~/.config/ranger/rc.conf
+ln -sf $DOTFILES_REPO/dotfiles/neofetch.conf ~/.config/neofetch/config.conf
 ln -sf $DOTFILES_REPO/lock/ ~/.config/lock
