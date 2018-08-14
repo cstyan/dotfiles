@@ -1,0 +1,65 @@
+---
+- hosts: all
+  vars:
+    local_scripts_dir: "{{ scripts_dir }}"
+  tasks:
+    - name: Run the equivalent of "pacman -Syu" as a separate step
+      become: true
+      pacman:
+        update_cache: yes
+        upgrade: yes
+    - name: install packages
+      become: true
+      pacman:
+        name: "{{ item }}"
+      with_items:
+        - alsa-utils
+        - ansible
+        - base-devel
+        # because hangouts
+        - chromium
+        - dunst
+        - firefox-developer-edition
+        # this probably isn't needed, since you need git to
+        # clone the repo locally anyways
+        - git
+        - i3
+        - imagemagick
+        - keepassx2
+        - neofetch
+        - openssh
+        - pulseaudio
+        - pulseaudio-alsa
+        - ranger
+        - telegram-desktop
+        - xorg
+        - zsh
+    - name: ensure git directory exists
+      file:
+        path: /home/callum/git
+        state: directory
+        owner: callum
+        group: callum
+        mode: 0755
+    - name: ensure yay is installed
+      script: "{{ scripts_dir}}/install-yay.sh"
+    - name: install ansible-git-aur so we can use yay
+      shell: yes | yay -S ansible-aur-git
+    - name: install AUR packages
+      aur: 
+        use: yay
+        name: "{{ item }}"
+      with_items:
+        - ripgrep-git
+        - slack-desktop
+        - spotify
+        - visual-studio-code-bin
+    - name: change shell to zsh
+      become: true   
+      shell: chsh -s /usr/bin/zsh callum
+    - name: set timezone
+      become: true
+      shell: timedatectl set-timezone Canada/Pacific
+    - name: enable timezone syncing daemon
+      become: true
+      shell: systemctl enable systemd-timesyncd
