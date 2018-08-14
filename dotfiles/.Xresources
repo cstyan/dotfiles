@@ -1,2 +1,4 @@
 ! rofi
 rofi.dpi: 144
+
+Xft.dpi:        144
