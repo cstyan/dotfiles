@@ -47,7 +47,7 @@ for_window [class=".*"] title_format " %title"
 ###################################################
 
 # start a terminal
-bindsym $mod+Return exec "termite"
+bindsym $mod+Return exec "alacritty"
 
 # kill focused window
 bindsym $mod+Shift+q kill
