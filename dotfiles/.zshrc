@@ -1,5 +1,5 @@
 source ~/git/dotfiles/antigen/antigen.zsh
-
+export SPACESHIP_ROOT=/home/callum/.antigen/repos/https-COLON--SLASH--SLASH-github.com-SLASH-denysdovhan-SLASH-spaceship-zsh-theme
 antigen use oh-my-zsh
 
 antigen bundle git
@@ -9,7 +9,6 @@ antigen bundle ssh-agent
 
 antigen bundle zsh-users/zsh-syntax-highlighting
 
-antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
 
 antigen apply
 
@@ -34,3 +33,5 @@ SPACESHIP_DIR_TRUNC=
 SPACESHIP_GIT_PREFIX="branch "
 
 export PATH=/home/callum/go/bin:$PATH
+
+antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
