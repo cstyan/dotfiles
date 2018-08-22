@@ -6,8 +6,8 @@
     - name: Run the equivalent of "pacman -Syu" as a separate step
       become: true
       pacman:
-        update_cache: yes
-        upgrade: yes
+      update_cache: yes
+      upgrade: yes
     - name: install packages
       become: true
       pacman:
@@ -41,10 +41,6 @@
         owner: callum
         group: callum
         mode: 0755
-    - name: ensure yay is installed
-      script: "{{ scripts_dir}}/install-yay.sh"
-    - name: install ansible-git-aur so we can use yay
-      shell: yes | yay -S ansible-aur-git
     - name: install AUR packages
       aur: 
         use: yay

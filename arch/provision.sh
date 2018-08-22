@@ -16,6 +16,12 @@ sudo pacman -Syu
 sudo pacman -S ansible
 
 echo "*******************************************************"
+echo "Install yay for AUR packages"
+echo "*******************************************************"
+bash $SCRIPTS_DIR/install-yay.sh
+yay -S ansible-aur-git
+
+echo "*******************************************************"
 echo "Run ansible provisioning playbooks."
 echo "*******************************************************"
 ANSIBLE_NOCOWS=1 ansible-playbook -K -c local -i localhost, packages.yml --extra-vars "scripts_dir=$SCRIPTS_DIR"
@@ -35,6 +41,10 @@ echo "Setup symlinks."
 echo "*******************************************************"
 mkdir -p ~/.config/dunst
 mkdir -p ~/.config/ranger
+mkdir -p ~/.config/i3
+mkdir -p ~/.config/i3status
+mkdir -p ~/.config/alacritty
+mkdir -p ~/.config/neofetch
 ln -sf $DOTFILES_REPO/dotfiles/.zshrc ~/.zshrc
 ln -sf $DOTFILES_REPO/dotfiles/.Xresources ~/.Xresources
 ln -sf $DOTFILES_REPO/dotfiles/alacritty.yml ~/.config/alacritty/alacritty.yml
