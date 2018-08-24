@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # toggles the external monitor on/off in specified direction
-IN="eDP1"
+IN="eDP-1"
 EXT_DP="DP1"
-EXT_HDMI="HDMI2"
+EXT_HDMI="HDMI-1"
 DIRECTION="left"
 
 use_external() {
