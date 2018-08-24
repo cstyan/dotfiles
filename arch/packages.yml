@@ -23,15 +23,21 @@
         # this probably isn't needed, since you need git to
         # clone the repo locally anyways
         - git
+        - graphviz
         - i3
         - imagemagick
         - keepassx2
+        - libinput
         - neofetch
         - openssh
         - pulseaudio
         - pulseaudio-alsa
         - ranger
+        - riot-desktop
+        - rofi
         - telegram-desktop
+        - ttf-hack
+        - visual-studio-code-bin
         - xorg
         - zsh
     - name: ensure git directory exists
