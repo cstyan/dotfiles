@@ -36,7 +36,6 @@
         - riot-desktop
         - rofi
         - telegram-desktop
-        - ttf-hack
         - visual-studio-code-bin
         - xorg
         - zsh
@@ -55,6 +54,8 @@
         - ripgrep-git
         - slack-desktop
         - spotify
+        - ttf-symbola
+        - ttf-unifont
         - visual-studio-code-bin
     - name: change shell to zsh
       become: true   

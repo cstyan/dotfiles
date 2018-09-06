@@ -37,6 +37,11 @@ echo "*******************************************************"
 curl -L https://github.com/mfaerevaag/wd/raw/master/install.sh | sh
 
 echo "*******************************************************"
+echo "Install other fonts."
+echo "*******************************************************"
+bash ./fonts/install.sh
+
+echo "*******************************************************"
 echo "Setup symlinks."
 echo "*******************************************************"
 mkdir -p ~/.config/dunst
