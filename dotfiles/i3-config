@@ -47,7 +47,7 @@ for_window [class=".*"] title_format " %title"
 ###################################################
 
 # start a terminal
-bindsym $mod+Return exec "alacritty"
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -249,6 +249,9 @@ exec --no-startup-id redshift -m randr -l 49.1458:123
 # disable screen sleep
 exec xset -dpms
 exec xset s off
+
+# disable key repeat for enter key
+exec --no-startup-id xset -r 36
 
 # touchpad settings
 exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "Synaptics Two-Finger Scrolling" 1, 1
