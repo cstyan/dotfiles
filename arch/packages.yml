@@ -28,6 +28,7 @@
         - imagemagick
         - keepassx2
         - libinput
+        - nautilus
         - neofetch
         - openssh
         - pulseaudio
