@@ -28,9 +28,12 @@
         - imagemagick
         - keepassx2
         - libinput
+        - libreoffice-still
         - nautilus
         - neofetch
         - openssh
+        - pavucontrol
+        - poppler
         - pulseaudio
         - pulseaudio-alsa
         - ranger
