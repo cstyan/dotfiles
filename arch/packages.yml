@@ -55,6 +55,7 @@
         use: yay
         name: "{{ item }}"
       with_items:
+        - alacritty-git
         - ripgrep-git
         - slack-desktop
         - spotify
