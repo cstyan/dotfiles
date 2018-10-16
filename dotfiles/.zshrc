@@ -33,6 +33,6 @@ SPACESHIP_HOST_SHOW=true
 SPACESHIP_DIR_TRUNC=
 SPACESHIP_GIT_PREFIX="branch "
 
-export PATH=/home/callum/go/bin:$PATH
+export PATH=/home/callum/google-cloud-sdk/bin:/home/callum/go/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
 
 antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
