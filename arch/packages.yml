@@ -32,6 +32,7 @@
         - nautilus
         - neofetch
         - openssh
+        - pacman-contrib
         - pavucontrol
         - poppler
         - pulseaudio
