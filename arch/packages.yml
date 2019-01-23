@@ -13,6 +13,7 @@
       pacman:
         name: "{{ item }}"
       with_items:
+        - alacritty
         - alsa-utils
         - ansible
         - base-devel
@@ -56,7 +57,6 @@
         use: yay
         name: "{{ item }}"
       with_items:
-        - alacritty-git
         - ripgrep-git
         - slack-desktop
         - spotify
