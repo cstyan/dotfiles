@@ -220,9 +220,13 @@ bar {
 
     colors {
         # border, background, text
-        focused_workspace #149f6c #2de5a2 #333333
-        urgent_workspace #c50737 #F83163 #333333
-        binding_mode #c50737 #F83163 #333333
+        focused_workspace #2de5a2 #2de5a2 #333333
+        urgent_workspace #F83163 #F83163 #333333
+        binding_mode #F83163 #F83163 #333333
+        inactive_workspace #888888 #888888 #222222
+        statusline #888888
+        background #222222
+        separator #2e8ae5
     }
 }
 
