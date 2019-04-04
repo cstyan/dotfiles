@@ -24,6 +24,7 @@
         # this probably isn't needed, since you need git to
         # clone the repo locally anyways
         - git
+        - gnupg
         - graphviz
         - i3
         - imagemagick
