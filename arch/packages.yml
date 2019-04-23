@@ -31,6 +31,7 @@
         - keepassx2
         - libinput
         - libreoffice-still
+        - msr-tools
         - nautilus
         - neofetch
         - openssh
@@ -58,7 +59,9 @@
         use: yay
         name: "{{ item }}"
       with_items:
+        - lenovo-throttling-fix-git
         - ripgrep-git
+        - s-tui
         - slack-desktop
         - spotify
         - ttf-symbola
