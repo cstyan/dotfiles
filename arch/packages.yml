@@ -42,6 +42,7 @@
         - pulseaudio-alsa
         - ranger
         - riot-desktop
+        - ripgrep
         - rofi
         - telegram-desktop
         - visual-studio-code-bin
@@ -60,7 +61,6 @@
         name: "{{ item }}"
       with_items:
         - lenovo-throttling-fix-git
-        - ripgrep-git
         - s-tui
         - slack-desktop
         - spotify
