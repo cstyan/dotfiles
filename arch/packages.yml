@@ -40,6 +40,7 @@
         - poppler
         - pulseaudio
         - pulseaudio-alsa
+        - pychess
         - ranger
         - riot-desktop
         - ripgrep
@@ -63,6 +64,7 @@
         - lenovo-throttling-fix-git
         - s-tui
         - slack-desktop
+        - stockfish
         - spotify
         - ttf-symbola
         - ttf-unifont
