@@ -26,6 +26,7 @@
         - git
         - gnupg
         - graphviz
+        - hugo
         - i3
         - imagemagick
         - keepassx2
