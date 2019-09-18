@@ -1,4 +1,4 @@
-TF_VERSION=0.11.13
+TF_VERSION=0.12.8
 TF_ZIP=terraform_"$TF_VERSION"_linux_amd64.zip
 
 # https://releases.hashicorp.com/terraform/0.11.13/terraform_0.11.13_linux_amd64.zip
