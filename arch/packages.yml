@@ -17,6 +17,9 @@
         - alsa-utils
         - ansible
         - base-devel
+        - blueman
+        - bluez
+        - bluez-utils
         # because hangouts
         - chromium
         - dunst
@@ -49,6 +52,7 @@
         - telegram-desktop
         - visual-studio-code-bin
         - xorg
+        - yarn # for prometheus
         - zsh
     - name: ensure git directory exists
       file:
