@@ -16,6 +16,10 @@ wd() {
   . /home/callum/bin/wd/wd.sh
 }
 
+tk() {
+  PAGER=cat /home/callum/go/bin/tk $@
+}
+
 export EDITOR="vim"
 
 # aliases
