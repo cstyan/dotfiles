@@ -51,6 +51,7 @@
         - rofi
         - telegram-desktop
         - visual-studio-code-bin
+        - vlc
         - xorg
         - yarn # for prometheus
         - zsh
