@@ -68,6 +68,7 @@
         name: "{{ item }}"
       with_items:
         - lenovo-throttling-fix-git
+        - notion-app
         - s-tui
         - slack-desktop
         - stockfish
