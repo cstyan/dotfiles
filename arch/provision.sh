@@ -51,6 +51,7 @@ mkdir -p ~/.config/i3status
 mkdir -p ~/.config/alacritty
 mkdir -p ~/.config/neofetch
 ln -sf $DOTFILES_REPO/dotfiles/.zshrc ~/.zshrc
+ln -sf $DOTFILES_REPO/dotfiles/.zlogin ~/.zlogin
 ln -sf $DOTFILES_REPO/dotfiles/.Xresources ~/.Xresources
 ln -sf $DOTFILES_REPO/dotfiles/alacritty.yml ~/.config/alacritty/alacritty.yml
 ln -sf $DOTFILES_REPO/dotfiles/i3-config ~/.config/i3/config
