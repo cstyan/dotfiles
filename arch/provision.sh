@@ -62,3 +62,4 @@ ln -sf $DOTFILES_REPO/dotfiles/ranger.conf ~/.config/ranger/rc.conf
 ln -sf $DOTFILES_REPO/dotfiles/neofetch.conf ~/.config/neofetch/config.conf
 ln -sf $DOTFILES_REPO/dotfiles/.xinitrc ~/.xinitrc
 ln -sf $DOTFILES_REPO/lock/ ~/.config/lock
+ln -sf $DOTFILES_REPO/bat ~/.config/bat/config

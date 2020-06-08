@@ -17,6 +17,7 @@
         - alsa-utils
         - ansible
         - base-devel
+        - bat
         - blueman
         - bluez
         - bluez-utils
