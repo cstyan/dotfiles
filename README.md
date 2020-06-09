@@ -1,1 +1,1 @@
-dotfiles for debian based linux
+dotfiles for linux
