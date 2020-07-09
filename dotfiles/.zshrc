@@ -17,7 +17,7 @@ wd() {
 }
 
 tk() {
-  PAGER=cat /usr/local/bin/tk $@
+  PAGER=cat /usr/bin/tk $@
 }
 
 export EDITOR="vim"
