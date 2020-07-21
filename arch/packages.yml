@@ -24,6 +24,7 @@
         # because hangouts
         - chromium
         - dunst
+        - element-desktop
         - firefox-developer-edition
         # this probably isn't needed, since you need git to
         # clone the repo locally anyways
@@ -47,7 +48,6 @@
         - pulseaudio-alsa
         - pychess
         - ranger
-        - riot-desktop
         - ripgrep
         - rofi
         - rust
