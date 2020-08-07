@@ -249,7 +249,7 @@ exec_always --no-startup-id /usr/bin/setxkbmap -option "compose:ralt"
 ###################################################
 
 # start redshift so my eyes don't bleed
-exec --no-startup-id redshift -m randr -l 49.1458:123
+# exec --no-startup-id redshift -m randr -l 49.1458:123
 
 # disable screen sleep
 exec xset -dpms
