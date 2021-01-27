@@ -240,7 +240,7 @@ bar {
 exec_always --no-startup-id $mon_script
 
 # swap capslock and left ctrl
-exec_always --no-startup-id /usr/bin/setxkbmap -option "ctrl:swapcaps"
+# exec_always --no-startup-id /usr/bin/setxkbmap -option "ctrl:swapcaps"
 exec_always --no-startup-id /usr/bin/setxkbmap -option "compose:ralt"
 
 
