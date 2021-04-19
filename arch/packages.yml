@@ -25,10 +25,12 @@
         - chromium
         - dunst
         - element-desktop
+        - ffmpeg-compat-57
         - firefox-developer-edition
         # this probably isn't needed, since you need git to
         # clone the repo locally anyways
         - git
+        - github-cli
         - gnupg
         - graphviz
         - hugo
@@ -40,6 +42,7 @@
         - msr-tools
         - nautilus
         - neofetch
+        - openjpeg
         - openssh
         - pacman-contrib
         - pavucontrol
@@ -51,11 +54,13 @@
         - ripgrep
         - rofi
         - rust
+        - shellcheck
         - telegram-desktop
         - visual-studio-code-bin
         - vlc
         - xorg
         - yarn # for prometheus
+        - zenity
         - zsh
     - name: ensure git directory exists
       file:
