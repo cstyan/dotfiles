@@ -29,7 +29,7 @@ ANSIBLE_NOCOWS=1 ansible-playbook -K -c local -i localhost, packages.yml --extra
 echo "*******************************************************"
 echo "Install Golang."
 echo "*******************************************************"
-bash $SCRIPTS_DIR/install-golang.sh
+bash $SCRIPTS_DIR/install-go.sh
 
 echo "*******************************************************"
 echo "Install warp drive."
