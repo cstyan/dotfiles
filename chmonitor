@@ -4,6 +4,8 @@
 IN="eDP-1"
 EXT_DP="DP1"
 EXT_HDMI="HDMI-1"
+EXT_HDMI_DESKTOP="HDMI-A"
+EXT_DP_DESKTOP="DisplayPort-2"
 DIRECTION="left"
 
 use_external() {
@@ -14,6 +16,10 @@ if (xrandr | grep -w "$EXT_DP connected"); then
     use_external $EXT_DP
 elif (xrandr | grep -w "$EXT_HDMI connected"); then
     use_external $EXT_HDMI
+elif (xrandr | grep -w "$EXT_HDMI_DESKTOP connected"); then
+    use_external $EXT_HDMI_DESKTOP
+elif (xrandr | grep -w "$EXT_DP_DESKTOP connected"); then
+    use_external $EXT_DP_DESKTOP
 else
     xrandr --output $IN --auto --output $EXT_DP --off --output $EXT_HDMI --off
     synclient TouchpadOff=0
