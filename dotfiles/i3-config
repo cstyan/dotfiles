@@ -42,6 +42,9 @@ new_window pixel 5
 # title format for all windows
 for_window [class=".*"] title_format " %title"
 
+# enforce window borders since some applications windows tell the WM to not use decorations
+for_window [class=.*] border pixel 5
+
 ###################################################
 # Key bindings
 ###################################################
