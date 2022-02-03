@@ -24,6 +24,8 @@
         - bluez-utils
         # because hangouts
         - chromium
+        - code
+        - discord
         - dunst
         - element-desktop
         - ffmpeg-compat-57
@@ -37,15 +39,17 @@
         - hugo
         - i3
         - imagemagick
-        - keepassx2
+        - jq
         - libinput
         - libreoffice-still
         - mpv
         - msr-tools
         - nautilus
         - neofetch
+        - noto-fonts-emoji
         - openjpeg
         - openssh
+        - otf-ipafont # japanese
         - pacman-contrib
         - pavucontrol
         - poppler
@@ -57,8 +61,10 @@
         - rofi
         - rust
         - shellcheck
+        - spotifyd
         - telegram-desktop
-        - visual-studio-code-bin
+        - unzip
+        - vim
         - vlc
         - xorg
         - yarn # for prometheus
@@ -76,13 +82,16 @@
         use: yay
         name: "{{ item }}"
       with_items:
+        - jsonnet
+        - keepassx2
         - lenovo-throttling-fix-git
         - notion-app
         - s-tui
         - slack-desktop
+        - spotify-tui
         - stockfish
-        - spotify
         - tanka
+        - ttf-kopubworld # korean
         - ttf-symbola
         - ttf-unifont
         - visual-studio-code-bin
