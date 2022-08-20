@@ -37,6 +37,7 @@
         - github-cli
         - gnupg
         - graphviz
+        - gucharmap
         - hugo
         - i3
         - imagemagick
