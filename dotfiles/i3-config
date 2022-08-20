@@ -103,7 +103,7 @@ bindsym $mod+t layout tabbed
 bindsym $mod+grave layout toggle split
 
 # toggle tiling / floating
-# bindsym $mod+Shift+space floating toggle
+bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
 # bindsym $mod+space focus mode_toggle
@@ -206,6 +206,8 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
+# macropad controls
+bindcode 196 exec "~/mute-mic.sh"
 
 ###################################################
 # i3bar
@@ -215,7 +217,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 # finds out, if available)
 bar {
     status_command i3status
-    tray_output none
+    # tray_output none
     position top
     # disable scrolling through workspaces
     bindsym button4 nop
@@ -262,3 +264,6 @@ exec xset s off
 exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "Synaptics Two-Finger Scrolling" 1, 1
 exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "Synaptics Scrolling Distance" -116, 116
 exec --no-startup-id synclient PalmDetect=1 > /dev/null 2>&1 || true
+
+# turn on fcitx
+exec --no-startup-id fcitx -d
