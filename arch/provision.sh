@@ -50,6 +50,7 @@ mkdir -p ~/.config/i3
 mkdir -p ~/.config/i3status
 mkdir -p ~/.config/alacritty
 mkdir -p ~/.config/neofetch
+mkdir -p ~/.config/polybar
 ln -sf $DOTFILES_REPO/dotfiles/.zshrc ~/.zshrc
 ln -sf $DOTFILES_REPO/dotfiles/.zlogin ~/.zlogin
 ln -sf $DOTFILES_REPO/dotfiles/.Xresources ~/.Xresources
@@ -62,6 +63,8 @@ ln -sf $DOTFILES_REPO/dotfiles/ranger.conf ~/.config/ranger/rc.conf
 ln -sf $DOTFILES_REPO/dotfiles/neofetch.conf ~/.config/neofetch/config.conf
 ln -sf $DOTFILES_REPO/dotfiles/.xinitrc ~/.xinitrc
 ln -sf $DOTFILES_REPO/dotfiles/.xprofile ~/.xprofile
+ln -sf $DOTFILES_REPO/dotfiles/polybar-config.ini ~/.config/polybar/config.ini
+ln -sf $DOTFILES_REPO/dotfiles/scripts/launch-polybar.sh ~/.config/polybar/launch-polybar.sh
 ln -sf $DOTFILES_REPO/lock/ ~/.config/lock
 ln -sf $DOTFILES_REPO/bat ~/.config/bat/config
 ln -sf $DOTFILES_REPO/scrpts/mute-mic.sh ~/mute-mic.sh

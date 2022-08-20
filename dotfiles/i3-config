@@ -7,6 +7,7 @@
 set $mod Mod1
 set $ctrl Control
 set $mon_script /home/callum/git/dotfiles/chmonitor
+set $polybar_script /home/callum/.config/polybar/launch-polybar.sh
 
 # colour vars
 set $focused_brd #2de5a2
@@ -215,25 +216,25 @@ bindcode 196 exec "~/mute-mic.sh"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-    status_command i3status
-    # tray_output none
-    position top
-    # disable scrolling through workspaces
-    bindsym button4 nop
-    bindsym button5 nop
+# bar {
+#     status_command i3status
+#     # tray_output none
+#     position top
+#     # disable scrolling through workspaces
+#     bindsym button4 nop
+#     bindsym button5 nop
 
-    colors {
-        # border, background, text
-        focused_workspace #2de5a2 #2de5a2 #333333
-        urgent_workspace #F83163 #F83163 #333333
-        binding_mode #F83163 #F83163 #333333
-        inactive_workspace #888888 #888888 #222222
-        statusline #888888
-        background #222222
-        separator #2e8ae5
-    }
-}
+#     colors {
+#         # border, background, text
+#         focused_workspace #2de5a2 #2de5a2 #333333
+#         urgent_workspace #F83163 #F83163 #333333
+#         binding_mode #F83163 #F83163 #333333
+#         inactive_workspace #888888 #888888 #222222
+#         statusline #888888
+#         background #222222
+#         separator #2e8ae5
+#     }
+# }
 
 
 
@@ -248,6 +249,8 @@ exec_always --no-startup-id $mon_script
 # exec_always --no-startup-id /usr/bin/setxkbmap -option "ctrl:swapcaps"
 exec_always --no-startup-id /usr/bin/setxkbmap -option "compose:ralt"
 
+# start polybar
+exec_always --no-startup-id $polybar_script
 
 ###################################################
 # misc
