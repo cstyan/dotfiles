@@ -14,7 +14,6 @@
         name: "{{ item }}"
       with_items:
         - alacritty
-        - anki
         - alsa-utils
         - ansible
         - base-devel
@@ -27,6 +26,8 @@
         - code
         - discord
         - dunst
+        - docker
+        - docker-compose
         - element-desktop
         - ffmpeg-compat-57
         - firefox-developer-edition
@@ -40,6 +41,8 @@
         - i3
         - imagemagick
         - jq
+        - kakasi
+        - kdenlive
         - libinput
         - libreoffice-still
         - mpv
@@ -47,6 +50,7 @@
         - nautilus
         - neofetch
         - noto-fonts-emoji
+        - obs-studio
         - openjpeg
         - openssh
         - otf-ipafont # japanese
@@ -63,7 +67,9 @@
         - shellcheck
         - spotifyd
         - telegram-desktop
+        - ttf-kanjistrokeorder
         - unzip
+        - usbutils
         - vim
         - vlc
         - xorg
@@ -82,9 +88,11 @@
         use: yay
         name: "{{ item }}"
       with_items:
+        - anki-git
         - jsonnet
         - keepassx2
         - lenovo-throttling-fix-git
+        - mecab-ipadic
         - notion-app
         - s-tui
         - slack-desktop
