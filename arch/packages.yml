@@ -95,6 +95,7 @@
         - lenovo-throttling-fix-git
         - mecab-ipadic
         - notion-app
+        - pulseaudio-ctl
         - s-tui
         - slack-desktop
         - spotify-tui

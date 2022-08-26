@@ -198,45 +198,8 @@ bindsym $mod+r mode "resize"
 # more frequently used actions
 bindsym $mod+Delete exec "~/.config/lock/lock.sh"
 
-# Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5%
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
-
-# Sreen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
-
 # macropad controls
-bindcode 196 exec "~/mute-mic.sh"
-
-###################################################
-# i3bar
-###################################################
-
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-# bar {
-#     status_command i3status
-#     # tray_output none
-#     position top
-#     # disable scrolling through workspaces
-#     bindsym button4 nop
-#     bindsym button5 nop
-
-#     colors {
-#         # border, background, text
-#         focused_workspace #2de5a2 #2de5a2 #333333
-#         urgent_workspace #F83163 #F83163 #333333
-#         binding_mode #F83163 #F83163 #333333
-#         inactive_workspace #888888 #888888 #222222
-#         statusline #888888
-#         background #222222
-#         separator #2e8ae5
-#     }
-# }
-
-
+bindcode 196 exec "pulseaudio-ctl mute-input"
 
 ###################################################
 # execs
