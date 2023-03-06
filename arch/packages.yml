@@ -67,12 +67,14 @@
         - rust
         - shellcheck
         - spotifyd
+        - spotify
         - telegram-desktop
         - ttf-kanjistrokeorder
         - unzip
         - usbutils
         - vim
         - vlc
+        - xdotool
         - xorg
         - yarn # for prometheus
         - zenity
@@ -90,6 +92,7 @@
         name: "{{ item }}"
       with_items:
         - anki-git
+        - fcitx-qt6
         - jsonnet
         - keepassx2
         - lenovo-throttling-fix-git
@@ -98,12 +101,14 @@
         - pulseaudio-ctl
         - s-tui
         - slack-desktop
+        - solaar
         - spotify-tui
         - stockfish
         - tanka
         - ttf-kopubworld # korean
         - ttf-symbola
         - ttf-unifont
+        - uair
         - visual-studio-code-bin
     - name: change shell to zsh
       become: true   

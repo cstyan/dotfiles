@@ -1,4 +1,4 @@
-GO_VERSION=go1.18.3.linux-amd64.tar.gz
+GO_VERSION=go1.19.6.linux-amd64.tar.gz
 
 rm -rf /usr/local/bin/go*
 rm -rf /usr/local/go

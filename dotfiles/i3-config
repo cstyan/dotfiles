@@ -198,8 +198,13 @@ bindsym $mod+r mode "resize"
 # more frequently used actions
 bindsym $mod+Delete exec "~/.config/lock/lock.sh"
 
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +1%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -1%
+
 # macropad controls
 bindcode 196 exec "pulseaudio-ctl mute-input"
+bindcode 194 exec "uairctl toggle"
 
 ###################################################
 # execs
@@ -233,3 +238,6 @@ exec --no-startup-id synclient PalmDetect=1 > /dev/null 2>&1 || true
 
 # turn on fcitx
 exec --no-startup-id fcitx -d
+
+# run solar so mouse buttons aren't reverse
+exec --no-startup-id solaar --window=hide
