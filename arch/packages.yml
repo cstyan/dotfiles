@@ -21,6 +21,7 @@
         - blueman
         - bluez
         - bluez-utils
+        - breeze
         # because hangouts
         - chromium
         - code
@@ -36,6 +37,8 @@
         - git
         - github-cli
         - gnupg
+        - goland
+        - goland-jre
         - graphviz
         - gucharmap
         - hugo
@@ -98,6 +101,7 @@
         - lenovo-throttling-fix-git
         - mecab-ipadic
         - notion-app
+        - nvm
         - pulseaudio-ctl
         - s-tui
         - slack-desktop
