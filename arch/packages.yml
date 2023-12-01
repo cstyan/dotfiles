@@ -96,6 +96,11 @@
       with_items:
         - anki-git
         - fcitx-qt6
+        - fcitx-mozc
+        - fcitx-qt5
+        - kcm-fcitx
+        - fcitx-gtk2
+        - fcitx-gtk3
         - jsonnet
         - keepassx2
         - lenovo-throttling-fix-git
