@@ -28,6 +28,7 @@
         - discord
         - dunst
         - docker
+        - docker-buildx
         - docker-compose
         - element-desktop
         - ffmpeg-compat-57
@@ -53,6 +54,7 @@
         - msr-tools
         - nautilus
         - neofetch
+        - neovim
         - noto-fonts-emoji
         - obs-studio
         - openjpeg
@@ -65,6 +67,7 @@
         - pulseaudio-alsa
         - pychess
         - ranger
+        - redshift
         - ripgrep
         - rofi
         - rust
