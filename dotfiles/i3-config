@@ -226,6 +226,7 @@ exec_always --no-startup-id $polybar_script
 
 # start redshift so my eyes don't bleed
 # exec --no-startup-id redshift -m randr -l 49.1458:123
+exec --no-startup-id redshift
 
 # disable screen sleep
 exec xset -dpms
