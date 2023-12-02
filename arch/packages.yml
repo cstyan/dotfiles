@@ -120,7 +120,6 @@
         - ttf-kopubworld # korean
         - ttf-symbola
         - ttf-unifont
-        - uair
         - visual-studio-code-bin
     - name: change shell to zsh
       become: true   
