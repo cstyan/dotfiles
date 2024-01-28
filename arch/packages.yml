@@ -50,6 +50,7 @@
         - kdenlive
         - libinput
         - libreoffice-still
+        - lm_sensors
         - mpv
         - msr-tools
         - nautilus
