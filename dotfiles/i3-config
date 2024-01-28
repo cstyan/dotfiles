@@ -11,8 +11,8 @@ set $polybar_script /home/callum/.config/polybar/launch-polybar.sh
 
 # colour vars
 set $focused_brd #2de5a2
-set $urgent_brd #9862EC
-set $f_inactive_brd #42bff0
+set $urgent_brd #707880
+set $f_inactive_brd #707880
 # indicator only shows on focused window anyways
 set $focused_ind #F83163
 set $focused_text #333333
@@ -21,11 +21,37 @@ set $focused_text #333333
 # General
 ###################################################
 
-# bg is the one that actually changes the visible border around an i3 container
-# colours                border   bg               text           ind             chld_b
-client.focused          #4c7899  $focused_brd     $focused_text  $focused_ind    $focused_brd
-client.urgent           #333333  $urgent_brd      #ffffff         #2e9ef4        #900000
-client.focused_inactive #333333  $f_inactive_brd  #ffffff         #484e50        #5f676a
+# # bg is the one that actually changes the visible border around an i3 container
+# # colours                border   bg               text           ind             chld_b
+# client.focused          #4c7899  $focused_brd     $focused_text  $focused_ind    $focused_brd
+# client.urgent           #333333  $urgent_brd      #ffffff         #2e9ef4        #900000
+# client.focused_inactive #707880  $f_inactive_brd  #ffffff         #484e50        #5f676a
+# client.unfocused        #707880  $f_inactive_brd  #ffffff         $485e50        #5f676a
+
+# class                 border  bground text    indicator child_border
+client.focused          #bd93f9 #bd93f9 #F8F8F2 #50fa7b   #bd93f9
+client.focused_inactive #929A9D #929A9D #F8F8F2 #83FFAE   #929A9D
+client.unfocused        #575F67 #575F67 #BFBFBF #ff5555   #575F67
+client.urgent           #ff79c6 #ff79c6 #F8F8F2 #ff5555   #ff79c6
+client.placeholder      #282A36 #282A36 #F8F8F2 #ff5555   #282A36
+
+client.background       #F8F8F2
+
+# bar {
+#   colors {
+#     background #282A36
+#     statusline #F8F8F2
+#     separator  #44475A
+
+#     focused_workspace  #44475A #44475A #F8F8F2
+#     active_workspace   #282A36 #44475A #F8F8F2
+#     inactive_workspace #282A36 #282A36 #BFBFBF
+#     urgent_workspace   #FF5555 #FF5555 #F8F8F2
+#     binding_mode       #FF5555 #FF5555 #F8F8F2
+#   }
+# }
+
+# bindsym $mod+d exec "dmenu_run -nf '#F8F8F2' -nb '#282A36' -sb '#6272A4' -sf '#F8F8F2' -fn 'monospace-10' -p 'dmenu%'"
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -45,6 +71,11 @@ for_window [class=".*"] title_format " %title"
 
 # enforce window borders since some applications windows tell the WM to not use decorations
 for_window [class=.*] border pixel 5
+
+# gaps config
+gaps inner 5px
+smart_gaps on
+# gaps outer 5px
 
 ###################################################
 # Key bindings
