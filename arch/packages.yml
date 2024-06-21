@@ -25,6 +25,7 @@
         # because hangouts
         - chromium
         - code
+        - cronie
         - discord
         - dunst
         - docker
