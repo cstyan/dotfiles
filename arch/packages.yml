@@ -51,6 +51,7 @@
         - libinput
         - libreoffice-still
         - lm_sensors
+        - mariadb
         - mpv
         - msr-tools
         - nautilus
@@ -105,6 +106,7 @@
         - kcm-fcitx
         - fcitx-gtk2
         - fcitx-gtk3
+        - heidisql
         - jsonnet
         - keepassx2
         - lenovo-throttling-fix-git
