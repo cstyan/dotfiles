@@ -42,6 +42,7 @@
         - goland
         - goland-jre
         - graphviz
+        - gtk4 # for alsa-scarlett-gui
         - gucharmap
         - hugo
         - i3
@@ -66,7 +67,7 @@
         - pacman-contrib
         - pavucontrol
         - poppler
-        - pulseaudio
+        - pipewire-pulse
         - pulseaudio-alsa
         - pychess
         - ranger
