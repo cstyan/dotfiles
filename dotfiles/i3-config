@@ -129,8 +129,8 @@ bindsym $mod+v split vertical
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+t layout tabbed
+# bindsym $mod+s layout stacking
+# bindsym $mod+t layout tabbed
 # grave is backtick (`)
 bindsym $mod+grave layout toggle split
 
